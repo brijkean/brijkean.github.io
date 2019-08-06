@@ -1,0 +1,240 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0%;
+}    
+
+video {
+    position: fixed; 
+    right: 0; 
+    top: 0; 
+    width: 100%; 
+    height: auto;
+    z-index: -1;
+}
+
+.navbar {
+    overflow: hidden; /* any content that overflows beyond the boundary of our nav bar is not displayed */
+    background-color: rgba(0,0,0,.3);
+    position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+    top: 0; /* display no space above the navbar */
+    width: 100%; /*makes navbar span the entire width of the page */
+    z-index: 1; 
+}
+.navbar a {
+    float: left; /* makes text float on the left on the navbar */
+    display: block; /* displays other text on same line or row, instead of new line */
+    color: white; 
+    padding: 14px 16px; /* adds padding around our text */
+    text-decoration: none; /* gets rid of the underlines  */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    Raleway, Avant Garde, Helvetica; 
+    font-size: 1.2rem; 
+    font-weight: 400;
+    font-variant: small-caps;
+    text-align: center; /* This centers the text within its container */
+    transition: letter-spacing .3s ease-in-out;
+}
+/* Navbar hover effect */
+.navbar a:hover {
+    /*background-color: #F4F4F4; */
+    color: rgba(87, 255, 255, 0.8); 
+    font-weight:550; 
+    /*text-shadow:  2px -1px 3px rgba(255, 255, 255, 0.829);*/
+    letter-spacing: .2rem;
+        
+}
+
+/* Text over the video */ 
+.header_text { 
+	background: rgba(012, 145, 145, 0.4); /* background text sits over */
+    color: white; 
+    text-shadow: rgba(0,0,0,.8) 2px 1px ;
+	/*width: 100%;*/
+    padding: 5%; /*20px;   makes background slightly beyond the text */
+    text-align: justify;
+	margin-top: 23%;
+}
+
+/* Table  */
+* { /* asterisk applies this effect to all elements on the page */
+    box-sizing: border-box; 
+}
+.row p {
+    color: white; 
+    text-align: justify left;
+    text-justify: newspaper;
+    padding-bottom: 1.2em;
+}
+.row a {
+    text-decoration: none;
+    color: rgba(87, 255, 255, 0.8);
+    
+}
+
+.column-i {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 325px;
+    background-color: rgb(85, 85, 85);
+}
+.column1 {
+    float: left;
+    width: 50%;
+    padding-left: 4%; /*10px;*/
+    padding-right: 4%;
+    padding-top: 1%;
+    height: fit-content;
+    min-height: 200px;
+    background-color: #4d4d4d;
+}
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 320px;
+    min-height: 250px;
+    background-color: #4d4d4d;
+}
+.column3 {
+    float: left;
+    width: 75%;
+    padding-left: 4%; /*10px;*/
+    padding-right: 4%;
+    padding-top: 1%;
+    
+    height: 325px;
+    background-color: rgb(85, 85, 85);
+}
+.column4 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    padding-top: 3%;
+    height: auto;
+    background-color: rgb(85, 85, 85);
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Contact form */
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 100%;
+	padding: 6px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /*allows user to resize the height of the element */
+    font-family: Perpetua, Rockwell Extra Bold; 
+}
+
+/* Submit button */
+input[type=submit] { 
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 6px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Form elememt */
+form { 
+    width: 90%;
+	border-radius: 5px; 
+	background-color: #f2f2f2;
+	padding: 20px;
+    font-family: "Trebuchet MS", Optima;
+    font-size: .8em;
+    margin-bottom: 20px;
+}
+
+/* Footer element */
+footer {
+	padding: 2%;
+    background-color: #4d4d4d;
+    font-size: 1em;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-variant: all-small-caps;
+}
+
+/*body {
+
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+  
+  line-height: calc(1.3rem + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+
+}/*math breakdown >for scalable type>>  
+body {
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}*/
+
+/*scaling line-heights section*/
+h1, h2, h3 {
+	line-height: 1;
+}
+
+.molten-leading {
+  line-height: 1;
+}
+    
+@media screen and (min-width: 20em/*320px*/) {
+  .molten-leading {
+    line-height: calc(1.2em + 0.4 * ((100vw - 20em) / 60));
+  }
+  h1, h2, h3 {
+	line-height:calc(1em + 0.4 * ((100vw - 20em) / 60));
+  }
+}
+
+@media screen and (min-width: 80em/*1280px*/) {
+  .molten-leading {
+    line-height: 1.2;
+  }
+  h1, h2, h3 {
+    line-height: 1.6;
+  }
+}
+
+/*SCALING TYPE SECTION*/    
+.fluid-type {   /*smallest type should ever get, for screens narrower than 320px*/
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {  /*for screens between 320 and 1280px wide, scale the base font-size proportional to the viewport*/
+  .fluid-type {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 960)); /* calc(14px+(22[maxfont]-14[minfont]) x ((100vw-320)/(1280-320)) ); simplifies to 14px+(8)*((100vw-320px)/960)) */
+  }
+}
+
+@media screen and (min-width: 1280px) { /*largest type should ever get, for screens 1280px and wider*/
+  .fluid-type {
+    font-size: 22px;
+  }
+} 
+
+@media all and (max-width: 583px) {
+    .header_text {
+      margin-top: 8%;
+    }
+    .navbar a {
+        padding: 0.7rem;
+        font-size: 0.7 em;
+    }
+  }
