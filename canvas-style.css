@@ -1,0 +1,100 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  overflow-x: hidden;
+  display: block;
+}
+
+*{box-sizing:border-box;}
+.canvas-container{
+  position: absolute;
+  height: 200px;
+  width: 45vw; 
+  margin: auto;
+  overflow: hidden; 
+  z-index: 0;
+}
+
+.canvas-container-large{
+  position: relative;
+  margin-bottom:5px;
+  margin: auto;
+  height: 46vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.div1 {
+  position: relative;
+  /*margin: auto;*/
+  height: 150px;
+  width: 250px;
+  padding: -10px;
+  /*border: 1px solid ;*/
+  -webkit-perspective: 250px; /* Safari 4.0 - 8.0 */
+  -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 10s infinite;
+  perspective: 250px;
+}
+
+.div1:hover {
+  filter: brightness(110%) ;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  50% {-webkit-perspective: 200px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  50% {perspective: 200px;}
+}
+
+.div2 {
+  position: absolute;
+  -webkit-transform: rotateX(30deg) scale(1) translateY(-30px) translateX(-10px);  /*Safari 3.0 - 8.0*/
+  transform: rotateX(30deg) scale(1) translateY(-30px) translateX(-10px);
+}
+
+.container2 {
+  position: absolute;
+  animation: mymove 10s infinite;
+  perspective: 250px;
+  -webkit-perspective: 250px; /* Safari 4.0 - 8.0 */
+  -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+}
+
+.container3 {
+  position: relative;
+  height: 300px;
+  width: inherit;
+  padding-top: 10px;
+  -webkit-perspective: 250px; /* Safari 4.0 - 8.0 */
+  -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 10s infinite;
+  perspective: 250px;
+}
+
+#canvas2, #canvasb2{  
+  transform: rotateY(-30deg) scale(.9);
+  position: absolute;
+  margin-left: -2em;
+  transition: filter .2s ease-in-out;
+}
+
+#canvasc2 {  
+  transform: rotateY(-3deg) scale(1.1) translateX(-10px) translateY(10px);
+  position: absolute;
+  top:0;
+  transition: filter .2s ease-in-out;
+}
+
+#canvasc2:hover {
+  filter: brightness(140%);
+}
+
+#canvas2:hover, #canvasb2:hover {
+  filter: brightness(170%);
+}
