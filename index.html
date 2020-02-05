@@ -64,7 +64,7 @@
         <div class="column3" style="z-index:8;"><!--right column 75%-->
             <div class="fluid-type">
             <h2>About</h2>
-                <p>I am a junior software developer with a background in design.<br><br>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and I have experience working in HTML, CSS, JavaScript, and SQL.<br><br>I am a full-stack developer and would love to work with you! <a href="#Contact">Get in touch</a> with me below!</p>
+                <p>I am a junior software developer with a background in design.<br><br>I'm a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and I have experience working in HTML, CSS, JavaScript, SQL, and Python.<br><br>I am a full-stack developer and would love to work with you! <a href="#Contact">Get in touch</a> with me below!</p>
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
         <div class="fluid-type">
             <div class="column1"><!--left column-->
                 <h2>GitHub</h2>
-				<p>You can view my coding projects on my GitHub profile <a href="https://github.com/the-tech-academy" target="_blank">here.</a></p>
+				<p>You can view my coding projects on my GitHub profile <a href="https://github.com/brijkean" target="_blank">here.</a></p>
             </div>
             <div class="column1" style="background-color: rgb(22, 26, 34);"><!--right column-->
                 <!--canvas-->
@@ -93,7 +93,7 @@
         </div>
         </div>
     </div>
-
+</div> <!--end div for closing contact form when clicked outside the open contact form box--> 
 <!--#CONTACT-->
     <div class="row" id="CONTACT" style="height: fit-content;"> 
         <div class="column4" style="padding-bottom: 1%;"> <!--column-i left column -->
@@ -105,10 +105,11 @@
                 </div>
                 <!--end canvas  -->
     <!--</div> end left column-->
-</div> <!--end div for closing contact form when clicked outside the open contact form box-->           
+            </div>
+<!--</div> end div for closing contact form when clicked outside the open contact form box-->           
           <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
 	        <div class="form-popup" id="Form">
-                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--specifies where to send the form data and how. Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it won't run unless live on the internet -->
+                <form action="https://formspree.io/email-address-here@gmail.com" method="POST" class="form-container"> <!--specifies where to send the form data and how. Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it won't run unless live on the internet -->
                 <div class="fluid-type">
                 <h2 style="color:black;">Contact</h2>     
                     <label>Name:</label>
@@ -130,7 +131,7 @@
     <a href=#HOME>Home</a>  &nbsp;•&nbsp; 
     <a href=#ABOUT>About</a> &nbsp;•&nbsp; 
     <a href="https://github.com/brijkean">Github</a> &nbsp;•&nbsp; 
-    <a href=#CONTACT>Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(87, 255, 255)"> © Brianna Keany</span>
+    <a onclick="openForm()">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(87, 255, 255)"> © Brianna Keany</span>
 </footer>
 
 
